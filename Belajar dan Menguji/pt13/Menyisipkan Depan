@@ -1,0 +1,42 @@
+# Membuat class untuk node
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.prev = None
+
+# Membuat class untuk double linked list
+
+
+class DoublyLinkedList:
+    def __init__(self):
+        self.head = None
+
+    # Method untuk menyisipkan node pada bagian awal double linked list
+    def insert(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+
+    # Method untuk mencetak double linked list
+    def print_list(self):
+        current = self.head
+        while current:
+            print(current.data)
+            current = current.next
+
+
+# Membuat objek untuk double linked list
+dllist = DoublyLinkedList()
+
+# Menyisipkan node pada bagian awal double linked list
+dllist.insert(40)
+dllist.insert(7)
+dllist.insert(15)
+
+# Mencetak double linked list
+dllist.print_list()

@@ -1,0 +1,14 @@
+for i in range(start,stop,step):​
+badan perulangan​
+
+----------------------------------------
+
+I = 10 (Nilai awal)​
+While (kondisi)​
+Badan perulangan​
+increment​
+
+----------------------------------------
+
+Break digunakan untuk menghentikan perulangan berdasarkan kondisi tertentu.​
+Continue digunakan untuk melanjutkan perulangan tanpa mengerjakan perintah apapun.​
